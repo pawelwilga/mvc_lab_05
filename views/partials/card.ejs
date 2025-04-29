@@ -1,0 +1,13 @@
+<div class="card">
+    <img 
+      class="card__image" 
+      src="/img/obrazek.webp" 
+      alt="<%= product.name %>"
+    /><!-- to nie jest dobry alt dla obrazka - lepszy byłby pusty, bo to tylko dekoracja -->
+    <h3 class="card__title"><%= product.name %></h3>
+    <p class="card__description"><%= product.description %></p>
+    <p class="card__price"><%= product.price %> zł</p>
+    <a href="/products/<%= product.name %>">Details</a>
+          <button onclick="deleteProduct('<%= product.name %>')">Delete</button>
+  </div>
+  
